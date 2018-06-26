@@ -1,0 +1,44 @@
+//ulistar93@unist.ac.kr
+//github.com/ulistar93
+//Free to use without commercialization or plagiarism problem
+//made as I remember
+//if it has copyright problem, I willing to erase this.
+
+T : # of testcase (1~26)
+N : # of node (1~10000)
+M : # of line(connect) (1~200000)
+following M lines : lines(connection) ex) 2 3 => node 2 and node 3 is connected. (non-directinonal)
+
+Condition 1. we can reduce the node X that has two connection, if there is connection between the nodes which connected with nX.
+
+Ex1.
+5 nodes : n1, n2, n3, n4, n5
+6 connection : (1,2),(1,3),(2,4),(3,4),(2,5),(4,5)
+(n1) - (n2)\
+  |      |  (n5)
+(n3) - (n4)/
+then we can reduce n5, because n2 and n4 is connected.
+(n1) - (n2)
+  |      |
+(n3) - (n4)
+(n4 cannot be reduced because n2 and n3 is not connected. as same as n1, n2, n3)
+
+Ex2.
+3 nodes : n1, n2, n3
+3 connection : (1,2),(2,3),(3,1)
+(n1) - (n2)
+  |  /
+(n3)
+then we can reduce n2, because n1 and n3 is connected.
+(n1)
+  |
+(n3)
+Or you can choose n1 or n3 too.
+if choose n1,
+       (n2)
+     /
+(n3)
+if choose n3,
+(n1) - (n2)
+
+Problem. In above condition, find the minimum number of node from given graph.
