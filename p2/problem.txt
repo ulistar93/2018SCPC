@@ -1,0 +1,16 @@
+//ulistar93@unist.ac.kr
+//github.com/ulistar93
+//Free to use without commercialization or plagiarism problem
+//made as I remember
+
+T : # of testcase (1~26)
+N : number
+
+Problem. Find the minimum number of palindromic numbers to insist a given number.
+         And line that numbers in a decending order.
+Ex. 12345 = 12321+ 22 + 2
+    => 3 12321 22 2 
+Ex. 8246 = 8228 + 11 + 7
+    => 3 8228 11 7
+Ex. 14323 = 12321 + 2002
+    => 2 12321 2002
