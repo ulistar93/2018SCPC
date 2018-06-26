@@ -1,2 +1,2 @@
-# 2018SCPC
+# 2018_SCPC
 SCPC solution code
